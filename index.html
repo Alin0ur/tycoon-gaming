@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/darkly/bootstrap.min.css" integrity="sha384-Bo21yfmmZuXwcN/9vKrA5jPUMhr7znVBBeLxT9MA4r2BchhusfJ6+n8TLGUcRAtL" crossorigin="anonymous">
+
+    <title>Concrete Calculator</title>
+</head>
+<body>
+<div class="container">
+    <h1 align="center">Concrete Calculator</h1>
+    <br>
+    <div class="form-group row">
+        <label for="concrete" class="col-sm-2 col-form-label">Crafting amount</label>
+        <div class="col-sm-2">
+            <input type="text" class="form-control" id="concrete">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="trailer" class="col-sm-2 col-form-label">Trailer</label>
+        <div class="col-sm-2">
+            <select class="custom-select" id="trailer">
+                <option value="400">MK1</option>
+                <option value="475">MK2</option>
+                <option value="600">MK3</option>
+                <option value="775">MK4</option>
+                <option value="1000">MK5</option>
+                <option value="1500">MK6</option>
+                <option value="2200">MK7</option>
+                <option value="2500">MK8</option>
+                <option value="2750">MK9</option>
+                <option value="3000">MK10</option>
+                <option value="3500">MK11</option>
+                <option value="5000">MK12</option>
+                <option value="8500">MK13</option>
+                <option value="9000">MK14</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="premium" class="col-sm-2 col-form-label">Premium</label>
+        <div class="col-sm-2">
+            <select class="custom-select" id="premium">
+                <option value="nok">No</option>
+                <option value="ok">Yes</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="inventory" class="col-sm-2 col-form-label">Inventory 300 kg</label>
+        <div class="col-sm-2">
+            <select class="custom-select" id="inventory">
+                <option value="nok">No</option>
+                <option value="ok">Yes</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-sm-10">
+            <button type="submit" class="btn btn-primary" id="BTN_calculate">Calculate</button>
+        </div>
+    </div>
+    <hr>
+    <div id="output"></div>
+</div>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+<!-- Plugins -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+
+<!-- Optional JavaScript -->
+<script src="assets/js/calculate.js"></script>
+</body>
+</html>
