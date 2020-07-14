@@ -79,6 +79,14 @@ $(document).ready(function () {
         var perRunSawdust = Math.ceil(perRunSand / 2.5);
         var perRunCement = Math.ceil(perRunSand / 5);
 
+        // CONCRETE per run (crafting)
+        var perRunConcrete = Math.floor(capacity / (5 * weightCement + weightTreatedWater));
+        var perRunCementConc = perRunConcrete * 5;
+        var perRunTreatedWaterConc = perRunConcrete;
+
+        // CONCRETE per run (sale)
+        var perRunConcreteSale = Math.floor(capacity / weightConcrete);
+
         /**********/
 
         var processing = costConcrete + costCement + costUnfilteredWater + costAcid + costRubble + costSawdust + costLogs;
@@ -243,6 +251,54 @@ $(document).ready(function () {
             '           <th>Cement</th>' +
             '           <th>' + amountCement + '</th>' +
             '           <th>' + perRunCement + '</th>' +
+            '       </tr>' +
+            '   </tbody>' +
+            '</table><hr>';
+
+        // TABLE: CONCRETE (crafting)
+        output += '<h4>Concrete (crafting)</h4>' +
+            '<table class="table table-responsive table-hover">' +
+            '   <thead>' +
+            '       <tr class="table-active">' +
+            '           <th>Product</th>' +
+            '           <th>Amount</th>' +
+            '           <th>Max per run</th>' +
+            '       </tr>' +
+            '   </thead>' +
+            '   <tbody>' +
+            '       <tr>' +
+            '           <td>Cement</td>' +
+            '           <td>' + amountCement + '</td>' +
+            '           <td>' + perRunCementConc + '</td>' +
+            '       </tr>' +
+            '       <tr>' +
+            '           <td>Treated Water</td>' +
+            '           <td>' + amountTreatedWater + '</td>' +
+            '           <td>' + perRunTreatedWaterConc + '</td>' +
+            '       </tr>' +
+            '       <tr>' +
+            '           <th>Concrete</th>' +
+            '           <th>' + amountConcrete + '</th>' +
+            '           <th>' + perRunConcrete + '</th>' +
+            '       </tr>' +
+            '   </tbody>' +
+            '</table><hr>';
+
+        // TABLE: CONCRETE (sale)
+        output += '<h4>Concrete (sale)</h4>' +
+            '<table class="table table-responsive table-hover">' +
+            '   <thead>' +
+            '       <tr class="table-active">' +
+            '           <th>Product</th>' +
+            '           <th>Amount</th>' +
+            '           <th>Max per run</th>' +
+            '       </tr>' +
+            '   </thead>' +
+            '   <tbody>' +
+            '       <tr>' +
+            '           <th>Concrete</th>' +
+            '           <th>' + amountConcrete + '</th>' +
+            '           <th>' + perRunConcreteSale + '</th>' +
             '       </tr>' +
             '   </tbody>' +
             '</table><hr>';
