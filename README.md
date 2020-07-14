@@ -1,2 +1,2 @@
-# tycoon-gaming
-Calculator for Tycoon Gaming
+# Tycoon Gaming
+Community-made Calculator for Tycoon Gaming, a FiveM server
